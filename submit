@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]; then
+  if [ "$1" == "pypy" ]; then
+    acc s $2 -- --guess-python-interpreter pypy
+  else
+    acc s $2
+  fi
+else
+  echo "Usage: submit ${language} main.py"
+fi

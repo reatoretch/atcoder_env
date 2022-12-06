@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]; then
+  oj t -c "$1 $2" -d ./tests/
+else
+  echo "Usage: check pypy main.py"
+fi
